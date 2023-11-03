@@ -191,14 +191,8 @@ a:hover {
 }
 
 /* 咖啡星讲堂列表样式 */
-#classroomList {
-    overflow: hidden;
-    height: 232px;
-}
-
 #classroomList ul {
-    overflow-x: scroll;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 #classroomList ul .card span.customize-mark {
@@ -256,7 +250,7 @@ a:hover {
 
 /* 底部菜单样式 */
 #footerMenu .iconfont {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 #footerMenu a.active {

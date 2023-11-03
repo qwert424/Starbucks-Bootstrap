@@ -35,7 +35,7 @@ $('#btn-next').click(function () {
         if (key === undefined || key) {
             const translateX = $(e).css("transform").replace(/[^0-9\-,]/g, '').split(',')[4]
             const ewidth = parseInt($(e).width())
-            if (Math.abs(translateX) >= ewidth) {
+            if (Math.abs(translateX) >= 4 * ewidth - $(window).width()) {
                 $(e).parent().children('.customize-control-next').hide()
             }
             if (+translateX === 0 || translateX === undefined) {
